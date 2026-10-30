@@ -1,0 +1,26 @@
+{
+ "instance": "System|rare-40|idonly",
+ "rounds": 3,
+ "policies": {
+  "span": {
+   "measured_events": 39994,
+   "ms": 36273.3
+  },
+  "width": {
+   "measured_events": 13160,
+   "ms": 5368.5
+  },
+  "evtband": {
+   "measured_events": 1121,
+   "ms": 1170.3
+  },
+  "provider": {
+   "measured_events": 41174,
+   "ms": 36309.8
+  }
+ },
+ "postfilter": {
+  "matched": 188,
+  "ms": 41081.7
+ }
+}

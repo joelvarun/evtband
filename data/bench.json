@@ -1,0 +1,845 @@
+{
+ "meta": {
+  "os_caption": "Windows-11-10.0.26200-SP0",
+  "os_build": "10.0.26200",
+  "collected": "2026-10-30",
+  "reader": "wevtutil qe /f:xml"
+ },
+ "budget": {
+  "max_equalities": 23,
+  "max_ranges": 22,
+  "max_with_provider": 22,
+  "total": 23,
+  "range_surcharge": 1
+ },
+ "rounds": 3,
+ "fast_ms": 3000.0,
+ "instances": [
+  {
+   "instance": "System|rare-24|idonly",
+   "channel": "System",
+   "mode": "rare-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 13,
+   "target_events": 70,
+   "channel_total": 41165,
+   "policies": {
+    "span": {
+     "measured_events": 34929,
+     "measured_waste": 34859,
+     "predicted_waste": 34859,
+     "cost": 2,
+     "terms": 1,
+     "ms": 39533.2,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=24 and EventID<=24579)]]"
+    },
+    "width": {
+     "measured_events": 591,
+     "measured_waste": 521,
+     "predicted_waste": 521,
+     "cost": 18,
+     "terms": 17,
+     "ms": 859.1,
+     "runs": 3,
+     "xpath": "*[System[(EventID=24 or EventID=26 or EventID=35 or EventID=101 or EventID=247 or EventID=1031 or EventID=1040 or EventID=1073 or EventID=4107 or (EventID>=4500 and EventID<=4501) or EventID=5001 or EventID=5006 or EventID=7011 or EventID=7023 or (EventID>=10000 and EventID<=10002) or EventID=10100 or (EventID>=24576 and EventID<=24579))]]"
+    },
+    "evtband": {
+     "measured_events": 591,
+     "measured_waste": 521,
+     "predicted_waste": 521,
+     "cost": 17,
+     "terms": 16,
+     "ms": 946.1,
+     "runs": 3,
+     "xpath": "*[System[(EventID=24 or EventID=26 or EventID=35 or EventID=101 or EventID=247 or EventID=1031 or EventID=1040 or EventID=1073 or EventID=4107 or (EventID>=4500 and EventID<=5001) or EventID=5006 or EventID=7011 or EventID=7023 or (EventID>=10000 and EventID<=10002) or EventID=10100 or (EventID>=24576 and EventID<=24579))]]"
+    },
+    "enumerate": {
+     "measured_events": 591,
+     "measured_waste": 521,
+     "predicted_waste": 521,
+     "cost": 23,
+     "terms": 23,
+     "ms": 950.9,
+     "runs": 3,
+     "xpath": "*[System[(EventID=24 or EventID=26 or EventID=35 or EventID=101 or EventID=247 or EventID=1031 or EventID=1040 or EventID=1073 or EventID=4107 or EventID=4500 or EventID=4501 or EventID=5001 or EventID=5006 or EventID=7011 or EventID=7023 or EventID=10000 or EventID=10001 or EventID=10002 or EventID=10100 or EventID=24576 or EventID=24577 or EventID=24578 or EventID=24579)]]"
+    },
+    "provider": {
+     "measured_events": 19381,
+     "measured_waste": 19311,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 9356.0,
+     "runs": 1,
+     "xpath": "*[System[(Provider[@Name='Display'] or Provider[@Name='Microsoft-Windows-DriverFrameworks-UserMode'] or Provider[@Name='Microsoft-Windows-Kernel-Boot'] or Provider[@Name='Microsoft-Windows-TPM-WMI'] or Provider[@Name='Microsoft-Windows-WLAN-AutoConfig'] or Provider[@Name='Microsoft-Windows-WPDClassInstaller'] or Provider[@Name='Microsoft-Windows-WinREAgent'] or Provider[@Name='Microsoft-Windows-Wininit'] or Provider[@Name='Netwtw10'] or Provider[@Name='Service Control Manager'] or Provider[@Name='User32'] or Provider[@Name='Volsnap'] or Provider[@Name='winsrvext'])]]"
+    }
+   }
+  },
+  {
+   "instance": "System|rare-40|idonly",
+   "channel": "System",
+   "mode": "rare-40",
+   "qualified": false,
+   "n_targets": 40,
+   "n_providers": 23,
+   "target_events": 188,
+   "channel_total": 41165,
+   "policies": {
+    "span": {
+     "measured_events": 39985,
+     "measured_waste": 39797,
+     "predicted_waste": 39797,
+     "cost": 2,
+     "terms": 1,
+     "ms": 45876.9,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=3 and EventID<=24579)]]"
+    },
+    "width": {
+     "measured_events": 13152,
+     "measured_waste": 12964,
+     "predicted_waste": 12964,
+     "cost": 22,
+     "terms": 21,
+     "ms": 6337.9,
+     "runs": 1,
+     "xpath": "*[System[((EventID>=3 and EventID<=5) or (EventID>=24 and EventID<=41) or EventID=62 or (EventID>=101 and EventID<=102) or EventID=134 or (EventID>=161 and EventID<=162) or EventID=187 or (EventID>=247 and EventID<=263) or EventID=1001 or (EventID>=1031 and EventID<=1040) or EventID=1073 or EventID=4107 or EventID=4199 or (EventID>=4500 and EventID<=4501) or (EventID>=5001 and EventID<=5006) or EventID=6008 or EventID=6166 or (EventID>=7011 and EventID<=7023) or (EventID>=10000 and EventID<=10002) or EventID=10100 or (EventID>=24576 and EventID<=24579))]]"
+    },
+    "evtband": {
+     "measured_events": 1121,
+     "measured_waste": 933,
+     "predicted_waste": 933,
+     "cost": 23,
+     "terms": 22,
+     "ms": 1366.6,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=3 and EventID<=5) or (EventID>=24 and EventID<=26) or EventID=35 or EventID=41 or EventID=62 or (EventID>=101 and EventID<=102) or EventID=134 or (EventID>=161 and EventID<=162) or EventID=187 or (EventID>=247 and EventID<=263) or EventID=1001 or (EventID>=1031 and EventID<=1040) or EventID=1073 or (EventID>=4107 and EventID<=5001) or EventID=5006 or EventID=6008 or EventID=6166 or EventID=7011 or EventID=7023 or (EventID>=10000 and EventID<=10002) or EventID=10100 or (EventID>=24576 and EventID<=24579))]]"
+    },
+    "provider": {
+     "measured_events": 41165,
+     "measured_waste": 40977,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 47037.9,
+     "runs": 1,
+     "xpath": "*"
+    }
+   }
+  },
+  {
+   "instance": "System|tail-24|idonly",
+   "channel": "System",
+   "mode": "tail-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 18,
+   "target_events": 442,
+   "channel_total": 41165,
+   "policies": {
+    "span": {
+     "measured_events": 40259,
+     "measured_waste": 39817,
+     "predicted_waste": 39817,
+     "cost": 2,
+     "terms": 1,
+     "ms": 46239.9,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=2 and EventID<=24576)]]"
+    },
+    "width": {
+     "measured_events": 769,
+     "measured_waste": 327,
+     "predicted_waste": 327,
+     "cost": 21,
+     "terms": 20,
+     "ms": 1128.7,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=2 and EventID<=4) or EventID=13 or EventID=25 or EventID=32 or EventID=62 or EventID=100 or EventID=153 or EventID=205 or EventID=247 or EventID=263 or EventID=1073 or EventID=1282 or EventID=5010 or EventID=6008 or EventID=7026 or EventID=10002 or EventID=10005 or (EventID>=15007 and EventID<=15008) or EventID=20003 or EventID=24576)]]"
+    },
+    "evtband": {
+     "measured_events": 769,
+     "measured_waste": 327,
+     "predicted_waste": 327,
+     "cost": 19,
+     "terms": 18,
+     "ms": 1107.8,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=2 and EventID<=4) or EventID=13 or EventID=25 or EventID=32 or EventID=62 or EventID=100 or EventID=153 or EventID=205 or (EventID>=247 and EventID<=263) or EventID=1073 or EventID=1282 or EventID=5010 or EventID=6008 or EventID=7026 or EventID=10002 or EventID=10005 or (EventID>=15007 and EventID<=15008) or (EventID>=20003 and EventID<=24576))]]"
+    },
+    "enumerate": {
+     "measured_events": 769,
+     "measured_waste": 327,
+     "predicted_waste": 327,
+     "cost": 23,
+     "terms": 23,
+     "ms": 1146.4,
+     "runs": 3,
+     "xpath": "*[System[(EventID=2 or EventID=3 or EventID=4 or EventID=13 or EventID=25 or EventID=32 or EventID=62 or EventID=100 or EventID=153 or EventID=205 or EventID=247 or EventID=263 or EventID=1073 or EventID=1282 or EventID=5010 or EventID=6008 or EventID=7026 or EventID=10002 or EventID=10005 or EventID=15007 or EventID=15008 or EventID=20003 or EventID=24576)]]"
+    },
+    "provider": {
+     "measured_events": 21378,
+     "measured_waste": 20936,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 11628.4,
+     "runs": 1,
+     "xpath": "*[System[(Provider[@Name='EventLog'] or Provider[@Name='Microsoft-Windows-DistributedCOM'] or Provider[@Name='Microsoft-Windows-HttpEvent'] or Provider[@Name='Microsoft-Windows-Hyper-V-Hypervisor'] or Provider[@Name='Microsoft-Windows-Hyper-V-VmSwitch'] or Provider[@Name='Microsoft-Windows-IsolatedUserMode'] or Provider[@Name='Microsoft-Windows-Kernel-Boot'] or Provider[@Name='Microsoft-Windows-Kernel-General'] or Provider[@Name='Microsoft-Windows-TPM-WMI'] or Provider[@Name='Microsoft-Windows-USB-USBHUB3'] or Provider[@Name='Microsoft-Windows-UserPnp'] or Provider[@Name='Microsoft-Windows-WLAN-AutoConfig'] or Provider[@Name='Microsoft-Windows-WPDClassInstaller'] or Provider[@Name='Netwtw10'] or Provider[@Name='User32'] or Provider[@Name='Virtual Disk Service'] or Provider[@Name='Win32k'] or Provider[@Name='winsrvext'])]]"
+    }
+   }
+  },
+  {
+   "instance": "System|tail-40|idonly",
+   "channel": "System",
+   "mode": "tail-40",
+   "qualified": false,
+   "n_targets": 40,
+   "n_providers": 25,
+   "target_events": 821,
+   "channel_total": 41165,
+   "policies": {
+    "span": {
+     "measured_events": 41114,
+     "measured_waste": 40293,
+     "predicted_waste": 40293,
+     "cost": 2,
+     "terms": 1,
+     "ms": 54610.6,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=1 and EventID<=51047)]]"
+    },
+    "width": {
+     "measured_events": 7683,
+     "measured_waste": 6862,
+     "predicted_waste": 6862,
+     "cost": 23,
+     "terms": 22,
+     "ms": 9349.0,
+     "runs": 1,
+     "xpath": "*[System[((EventID>=1 and EventID<=36) or (EventID>=67 and EventID<=69) or (EventID>=102 and EventID<=109) or (EventID>=165 and EventID<=187) or (EventID>=277 and EventID<=292) or EventID=577 or EventID=1001 or (EventID>=1038 and EventID<=1041) or EventID=1074 or EventID=1282 or EventID=4003 or EventID=4107 or (EventID>=6008 and EventID<=6009) or EventID=7001 or (EventID>=10000 and EventID<=10001) or EventID=10317 or EventID=15007 or EventID=16962 or EventID=24577 or EventID=24711 or EventID=50106 or EventID=51047)]]"
+    },
+    "evtband": {
+     "measured_events": 2331,
+     "measured_waste": 1510,
+     "predicted_waste": 1510,
+     "cost": 23,
+     "terms": 22,
+     "ms": 3425.7,
+     "runs": 1,
+     "xpath": "*[System[(EventID=1 or (EventID>=3 and EventID<=5) or EventID=13 or EventID=18 or EventID=24 or (EventID>=26 and EventID<=27) or (EventID>=35 and EventID<=36) or (EventID>=67 and EventID<=69) or EventID=102 or EventID=109 or (EventID>=165 and EventID<=187) or (EventID>=277 and EventID<=292) or (EventID>=577 and EventID<=1282) or (EventID>=4003 and EventID<=4107) or (EventID>=6008 and EventID<=6009) or EventID=7001 or (EventID>=10000 and EventID<=10001) or EventID=10317 or (EventID>=15007 and EventID<=16962) or EventID=24577 or EventID=24711 or (EventID>=50106 and EventID<=51047))]]"
+    },
+    "provider": {
+     "measured_events": 41165,
+     "measured_waste": 40344,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 55224.7,
+     "runs": 1,
+     "xpath": "*"
+    }
+   }
+  },
+  {
+   "instance": "Application|rare-24|idonly",
+   "channel": "Application",
+   "mode": "rare-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 14,
+   "target_events": 40,
+   "channel_total": 25186,
+   "policies": {
+    "span": {
+     "measured_events": 14939,
+     "measured_waste": 14899,
+     "predicted_waste": 14899,
+     "cost": 2,
+     "terms": 1,
+     "ms": 10616.2,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=0 and EventID<=11724)]]"
+    },
+    "width": {
+     "measured_events": 912,
+     "measured_waste": 872,
+     "predicted_waste": 871,
+     "cost": 20,
+     "terms": 19,
+     "ms": 949.7,
+     "runs": 3,
+     "xpath": "*[System[(EventID=0 or EventID=12 or EventID=17 or EventID=87 or EventID=259 or EventID=413 or EventID=482 or EventID=492 or EventID=1029 or EventID=1034 or EventID=1038 or EventID=4004 or EventID=4108 or (EventID>=4111 and EventID<=4112) or EventID=4625 or (EventID>=6005 and EventID<=6006) or EventID=8225 or (EventID>=10001 and EventID<=10002) or EventID=11724)]]"
+    },
+    "evtband": {
+     "measured_events": 912,
+     "measured_waste": 872,
+     "predicted_waste": 871,
+     "cost": 17,
+     "terms": 16,
+     "ms": 951.2,
+     "runs": 3,
+     "xpath": "*[System[(EventID=0 or EventID=12 or EventID=17 or EventID=87 or EventID=259 or (EventID>=413 and EventID<=492) or EventID=1029 or EventID=1034 or EventID=1038 or EventID=4004 or EventID=4108 or (EventID>=4111 and EventID<=4625) or (EventID>=6005 and EventID<=6006) or EventID=8225 or (EventID>=10001 and EventID<=10002) or EventID=11724)]]"
+    },
+    "enumerate": {
+     "measured_events": 912,
+     "measured_waste": 872,
+     "predicted_waste": 871,
+     "cost": 22,
+     "terms": 22,
+     "ms": 918.4,
+     "runs": 3,
+     "xpath": "*[System[(EventID=0 or EventID=12 or EventID=17 or EventID=87 or EventID=259 or EventID=413 or EventID=482 or EventID=492 or EventID=1029 or EventID=1034 or EventID=1038 or EventID=4004 or EventID=4108 or EventID=4111 or EventID=4112 or EventID=4625 or EventID=6005 or EventID=6006 or EventID=8225 or EventID=10001 or EventID=10002 or EventID=11724)]]"
+    },
+    "provider": {
+     "measured_events": 4979,
+     "measured_waste": 4939,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 4778.9,
+     "runs": 1,
+     "xpath": "*[System[(Provider[@Name='ASUSSystemAnalysis'] or Provider[@Name='DPTF'] or Provider[@Name='ESENT'] or Provider[@Name='Microsoft-Windows-AppModel-State'] or Provider[@Name='Microsoft-Windows-CAPI2'] or Provider[@Name='Microsoft-Windows-CertificateServicesClient-CertEnroll'] or Provider[@Name='Microsoft-Windows-Defrag'] or Provider[@Name='Microsoft-Windows-EventSystem'] or Provider[@Name='Microsoft-Windows-Winlogon'] or Provider[@Name='Microsoft-Windows-Winsrv'] or Provider[@Name='MsiInstaller'] or Provider[@Name='NVIDIA GeForce Experience SelfUpdate Source'] or Provider[@Name='VSS'] or Provider[@Name='ss_conn_launcher'])]]"
+    }
+   }
+  },
+  {
+   "instance": "Application|rare-40|idonly",
+   "channel": "Application",
+   "mode": "rare-40",
+   "qualified": false,
+   "n_targets": 40,
+   "n_providers": 22,
+   "target_events": 140,
+   "channel_total": 25186,
+   "policies": {
+    "span": {
+     "measured_events": 14940,
+     "measured_waste": 14800,
+     "predicted_waste": 14799,
+     "cost": 2,
+     "terms": 1,
+     "ms": 10824.4,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=0 and EventID<=11724)]]"
+    },
+    "width": {
+     "measured_events": 1802,
+     "measured_waste": 1662,
+     "predicted_waste": 1661,
+     "cost": 22,
+     "terms": 21,
+     "ms": 1597.0,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=0 and EventID<=2) or (EventID>=12 and EventID<=17) or EventID=63 or EventID=87 or (EventID>=259 and EventID<=264) or EventID=413 or (EventID>=482 and EventID<=492) or (EventID>=1023 and EventID<=1038) or EventID=1130 or EventID=3602 or EventID=4004 or EventID=4097 or (EventID>=4108 and EventID<=4112) or EventID=4625 or (EventID>=6004 and EventID<=6006) or EventID=7042 or EventID=8212 or EventID=8225 or (EventID>=10001 and EventID<=10003) or EventID=11707 or EventID=11724)]]"
+    },
+    "evtband": {
+     "measured_events": 1025,
+     "measured_waste": 885,
+     "predicted_waste": 884,
+     "cost": 19,
+     "terms": 18,
+     "ms": 1177.4,
+     "runs": 3,
+     "xpath": "*[System[(EventID=0 or EventID=2 or EventID=12 or EventID=17 or (EventID>=63 and EventID<=87) or (EventID>=259 and EventID<=264) or (EventID>=413 and EventID<=492) or EventID=1023 or (EventID>=1029 and EventID<=1034) or EventID=1038 or EventID=1130 or (EventID>=3602 and EventID<=4004) or (EventID>=4097 and EventID<=4625) or (EventID>=6004 and EventID<=7042) or EventID=8212 or EventID=8225 or (EventID>=10001 and EventID<=10003) or (EventID>=11707 and EventID<=11724))]]"
+    },
+    "provider": {
+     "measured_events": 6242,
+     "measured_waste": 6102,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 4764.4,
+     "runs": 1,
+     "xpath": "*[System[(Provider[@Name='.NET Runtime'] or Provider[@Name='.NET Runtime Optimization Service'] or Provider[@Name='ASUSSystemAnalysis'] or Provider[@Name='DPTF'] or Provider[@Name='Dwminit'] or Provider[@Name='ESENT'] or Provider[@Name='Microsoft-Windows-AppModel-State'] or Provider[@Name='Microsoft-Windows-CAPI2'] or Provider[@Name='Microsoft-Windows-CertificateServicesClient-CertEnroll'] or Provider[@Name='Microsoft-Windows-Defrag'] or Provider[@Name='Microsoft-Windows-EventSystem'] or Provider[@Name='Microsoft-Windows-RestartManager'] or Provider[@Name='Microsoft-Windows-Search'] or Provider[@Name='Microsoft-Windows-WMI'] or Provider[@Name='Microsoft-Windows-Winlogon'] or Provider[@Name='Microsoft-Windows-Winsrv'] or Provider[@Name='MsiInstaller'] or Provider[@Name='NVIDIA GeForce Experience SelfUpdate Source'] or Provider[@Name='SecurityCenter'] or Provider[@Name='System Restore'] or Provider[@Name='VSS'] or Provider[@Name='ss_conn_launcher'])]]"
+    }
+   }
+  },
+  {
+   "instance": "Application|tail-24|idonly",
+   "channel": "Application",
+   "mode": "tail-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 16,
+   "target_events": 253,
+   "channel_total": 25186,
+   "policies": {
+    "span": {
+     "measured_events": 14904,
+     "measured_waste": 14651,
+     "predicted_waste": 14650,
+     "cost": 2,
+     "terms": 1,
+     "ms": 10135.0,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=0 and EventID<=10005)]]"
+    },
+    "width": {
+     "measured_events": 1120,
+     "measured_waste": 867,
+     "predicted_waste": 866,
+     "cost": 20,
+     "terms": 19,
+     "ms": 1231.8,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=0 and EventID<=2) or EventID=12 or EventID=33 or EventID=63 or EventID=105 or EventID=259 or (EventID>=482 and EventID<=492) or (EventID>=900 and EventID<=902) or (EventID>=1022 and EventID<=1023) or EventID=1066 or EventID=1130 or EventID=4097 or EventID=4112 or EventID=6003 or EventID=7042 or EventID=8193 or EventID=8212 or EventID=8225 or EventID=10005)]]"
+    },
+    "evtband": {
+     "measured_events": 1120,
+     "measured_waste": 867,
+     "predicted_waste": 866,
+     "cost": 16,
+     "terms": 15,
+     "ms": 1192.4,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=0 and EventID<=2) or EventID=12 or (EventID>=33 and EventID<=63) or EventID=105 or EventID=259 or (EventID>=482 and EventID<=902) or (EventID>=1022 and EventID<=1023) or (EventID>=1066 and EventID<=1130) or EventID=4097 or EventID=4112 or EventID=6003 or (EventID>=7042 and EventID<=8193) or EventID=8212 or EventID=8225 or EventID=10005)]]"
+    },
+    "provider": {
+     "measured_events": 17222,
+     "measured_waste": 16969,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 10129.4,
+     "runs": 1,
+     "xpath": "*[System[(Provider[@Name='.NET Runtime'] or Provider[@Name='.NET Runtime Optimization Service'] or Provider[@Name='ESENT'] or Provider[@Name='LightingService'] or Provider[@Name='Microsoft-Windows-AppModel-State'] or Provider[@Name='Microsoft-Windows-CAPI2'] or Provider[@Name='Microsoft-Windows-Defrag'] or Provider[@Name='Microsoft-Windows-RestartManager'] or Provider[@Name='Microsoft-Windows-Search'] or Provider[@Name='Microsoft-Windows-Security-SPP'] or Provider[@Name='Microsoft-Windows-WMI'] or Provider[@Name='Microsoft-Windows-Winlogon'] or Provider[@Name='SecurityCenter'] or Provider[@Name='SideBySide'] or Provider[@Name='System Restore'] or Provider[@Name='VSS'])]]"
+    }
+   }
+  },
+  {
+   "instance": "Application|tail-40|idonly",
+   "channel": "Application",
+   "mode": "tail-40",
+   "qualified": false,
+   "n_targets": 40,
+   "n_providers": 25,
+   "target_events": 452,
+   "channel_total": 25186,
+   "policies": {
+    "span": {
+     "measured_events": 14939,
+     "measured_waste": 14487,
+     "predicted_waste": 14486,
+     "cost": 2,
+     "terms": 1,
+     "ms": 10823.6,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=0 and EventID<=11707)]]"
+    },
+    "width": {
+     "measured_events": 3417,
+     "measured_waste": 2965,
+     "predicted_waste": 2964,
+     "cost": 23,
+     "terms": 22,
+     "ms": 3016.0,
+     "runs": 1,
+     "xpath": "*[System[((EventID>=0 and EventID<=1) or (EventID>=13 and EventID<=17) or EventID=33 or EventID=63 or (EventID>=102 and EventID<=105) or (EventID>=256 and EventID<=264) or (EventID>=301 and EventID<=302) or EventID=330 or EventID=903 or (EventID>=1003 and EventID<=1038) or EventID=1066 or EventID=1532 or EventID=3602 or (EventID>=4108 and EventID<=4111) or EventID=4625 or (EventID>=6003 and EventID<=6005) or EventID=7042 or EventID=8212 or EventID=8225 or EventID=8303 or (EventID>=10002 and EventID<=10010) or EventID=11707)]]"
+    },
+    "evtband": {
+     "measured_events": 1529,
+     "measured_waste": 1077,
+     "predicted_waste": 1076,
+     "cost": 23,
+     "terms": 22,
+     "ms": 1843.9,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=0 and EventID<=1) or EventID=13 or (EventID>=17 and EventID<=63) or (EventID>=102 and EventID<=256) or (EventID>=259 and EventID<=264) or (EventID>=301 and EventID<=302) or EventID=330 or EventID=903 or EventID=1003 or (EventID>=1013 and EventID<=1023) or EventID=1033 or EventID=1038 or EventID=1066 or EventID=1532 or EventID=3602 or (EventID>=4108 and EventID<=4625) or (EventID>=6003 and EventID<=7042) or EventID=8212 or EventID=8225 or EventID=8303 or EventID=10002 or (EventID>=10010 and EventID<=11707))]]"
+    },
+    "provider": {
+     "measured_events": 25187,
+     "measured_waste": 24735,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 15789.2,
+     "runs": 1,
+     "xpath": "*"
+    }
+   }
+  },
+  {
+   "instance": "Microsoft-Windows-AppXDeploymentServer/Operational|rare-24|idonly",
+   "channel": "Microsoft-Windows-AppXDeploymentServer/Operational",
+   "mode": "rare-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 1,
+   "target_events": 80,
+   "channel_total": 6525,
+   "policies": {
+    "span": {
+     "measured_events": 6331,
+     "measured_waste": 6251,
+     "predicted_waste": 6245,
+     "cost": 2,
+     "terms": 1,
+     "ms": 5164.7,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=455 and EventID<=10007)]]"
+    },
+    "width": {
+     "measured_events": 80,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 21,
+     "terms": 20,
+     "ms": 230.6,
+     "runs": 3,
+     "xpath": "*[System[(EventID=455 or EventID=486 or EventID=604 or EventID=626 or EventID=640 or EventID=642 or EventID=647 or EventID=658 or EventID=679 or EventID=684 or EventID=763 or EventID=818 or (EventID>=5505 and EventID<=5506) or EventID=5508 or (EventID>=9622 and EventID<=9627) or EventID=9641 or EventID=9645 or EventID=9660 or EventID=10000 or EventID=10007)]]"
+    },
+    "evtband": {
+     "measured_events": 80,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 14,
+     "terms": 13,
+     "ms": 243.5,
+     "runs": 3,
+     "xpath": "*[System[(EventID=455 or EventID=486 or EventID=604 or EventID=626 or (EventID>=640 and EventID<=658) or (EventID>=679 and EventID<=684) or EventID=763 or EventID=818 or (EventID>=5505 and EventID<=5506) or EventID=5508 or (EventID>=9622 and EventID<=9641) or (EventID>=9645 and EventID<=10000) or EventID=10007)]]"
+    },
+    "provider": {
+     "measured_events": 6531,
+     "measured_waste": 6451,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 5567.8,
+     "runs": 1,
+     "xpath": "*[System[Provider[@Name='Microsoft-Windows-AppXDeployment-Server']]]"
+    }
+   }
+  },
+  {
+   "instance": "Microsoft-Windows-AppXDeploymentServer/Operational|rare-40|idonly",
+   "channel": "Microsoft-Windows-AppXDeploymentServer/Operational",
+   "mode": "rare-40",
+   "qualified": false,
+   "n_targets": 40,
+   "n_providers": 1,
+   "target_events": 374,
+   "channel_total": 6525,
+   "policies": {
+    "span": {
+     "measured_events": 6366,
+     "measured_waste": 5992,
+     "predicted_waste": 5986,
+     "cost": 2,
+     "terms": 1,
+     "ms": 5888.6,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=401 and EventID<=10007)]]"
+    },
+    "width": {
+     "measured_events": 672,
+     "measured_waste": 298,
+     "predicted_waste": 298,
+     "cost": 15,
+     "terms": 14,
+     "ms": 699.2,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=401 and EventID<=419) or EventID=455 or (EventID>=478 and EventID<=486) or EventID=574 or (EventID>=604 and EventID<=605) or (EventID>=626 and EventID<=684) or EventID=763 or (EventID>=813 and EventID<=822) or EventID=865 or EventID=1230 or (EventID>=5505 and EventID<=5508) or EventID=8106 or (EventID>=9622 and EventID<=9660) or (EventID>=10000 and EventID<=10007))]]"
+    },
+    "evtband": {
+     "measured_events": 374,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 13,
+     "terms": 12,
+     "ms": 497.5,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=401 and EventID<=455) or (EventID>=478 and EventID<=486) or EventID=574 or (EventID>=604 and EventID<=605) or (EventID>=626 and EventID<=684) or (EventID>=763 and EventID<=822) or EventID=865 or (EventID>=1230 and EventID<=5506) or EventID=5508 or (EventID>=8106 and EventID<=9641) or (EventID>=9645 and EventID<=10000) or EventID=10007)]]"
+    },
+    "provider": {
+     "measured_events": 6531,
+     "measured_waste": 6157,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 5427.4,
+     "runs": 1,
+     "xpath": "*[System[Provider[@Name='Microsoft-Windows-AppXDeployment-Server']]]"
+    }
+   }
+  },
+  {
+   "instance": "Microsoft-Windows-AppXDeploymentServer/Operational|tail-24|idonly",
+   "channel": "Microsoft-Windows-AppXDeploymentServer/Operational",
+   "mode": "tail-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 1,
+   "target_events": 179,
+   "channel_total": 6525,
+   "policies": {
+    "span": {
+     "measured_events": 6366,
+     "measured_waste": 6187,
+     "predicted_waste": 6181,
+     "cost": 2,
+     "terms": 1,
+     "ms": 5790.4,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=401 and EventID<=10007)]]"
+    },
+    "width": {
+     "measured_events": 179,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 20,
+     "terms": 19,
+     "ms": 316.8,
+     "runs": 3,
+     "xpath": "*[System[(EventID=401 or EventID=404 or EventID=419 or EventID=455 or EventID=486 or EventID=574 or (EventID>=604 and EventID<=605) or (EventID>=626 and EventID<=627) or (EventID>=638 and EventID<=642) or EventID=813 or (EventID>=818 and EventID<=819) or EventID=5505 or EventID=5508 or EventID=9623 or EventID=9641 or EventID=9645 or EventID=9660 or EventID=10000 or EventID=10007)]]"
+    },
+    "evtband": {
+     "measured_events": 179,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 13,
+     "terms": 12,
+     "ms": 346.0,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=401 and EventID<=455) or EventID=486 or EventID=574 or (EventID>=604 and EventID<=605) or (EventID>=626 and EventID<=642) or (EventID>=813 and EventID<=819) or EventID=5505 or EventID=5508 or EventID=9623 or EventID=9641 or (EventID>=9645 and EventID<=10000) or EventID=10007)]]"
+    },
+    "provider": {
+     "measured_events": 6531,
+     "measured_waste": 6352,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 5324.3,
+     "runs": 1,
+     "xpath": "*[System[Provider[@Name='Microsoft-Windows-AppXDeployment-Server']]]"
+    }
+   }
+  },
+  {
+   "instance": "Microsoft-Windows-AppXDeploymentServer/Operational|tail-40|idonly",
+   "channel": "Microsoft-Windows-AppXDeploymentServer/Operational",
+   "mode": "tail-40",
+   "qualified": false,
+   "n_targets": 40,
+   "n_providers": 1,
+   "target_events": 374,
+   "channel_total": 6525,
+   "policies": {
+    "span": {
+     "measured_events": 6366,
+     "measured_waste": 5992,
+     "predicted_waste": 5986,
+     "cost": 2,
+     "terms": 1,
+     "ms": 5281.4,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=401 and EventID<=10007)]]"
+    },
+    "width": {
+     "measured_events": 672,
+     "measured_waste": 298,
+     "predicted_waste": 298,
+     "cost": 15,
+     "terms": 14,
+     "ms": 713.2,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=401 and EventID<=419) or EventID=455 or (EventID>=478 and EventID<=486) or EventID=574 or (EventID>=604 and EventID<=605) or (EventID>=626 and EventID<=684) or EventID=763 or (EventID>=813 and EventID<=822) or EventID=865 or EventID=1230 or (EventID>=5505 and EventID<=5508) or EventID=8106 or (EventID>=9622 and EventID<=9660) or (EventID>=10000 and EventID<=10007))]]"
+    },
+    "evtband": {
+     "measured_events": 374,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 13,
+     "terms": 12,
+     "ms": 493.6,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=401 and EventID<=455) or (EventID>=478 and EventID<=486) or EventID=574 or (EventID>=604 and EventID<=605) or (EventID>=626 and EventID<=684) or (EventID>=763 and EventID<=822) or EventID=865 or (EventID>=1230 and EventID<=5506) or EventID=5508 or (EventID>=8106 and EventID<=9641) or (EventID>=9645 and EventID<=10000) or EventID=10007)]]"
+    },
+    "provider": {
+     "measured_events": 6531,
+     "measured_waste": 6157,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 5228.5,
+     "runs": 1,
+     "xpath": "*[System[Provider[@Name='Microsoft-Windows-AppXDeployment-Server']]]"
+    }
+   }
+  },
+  {
+   "instance": "Microsoft-Windows-WebAuthN/Operational|rare-24|idonly",
+   "channel": "Microsoft-Windows-WebAuthN/Operational",
+   "mode": "rare-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 1,
+   "target_events": 84,
+   "channel_total": 2096,
+   "policies": {
+    "span": {
+     "measured_events": 2096,
+     "measured_waste": 2012,
+     "predicted_waste": 2012,
+     "cost": 2,
+     "terms": 1,
+     "ms": 52728.4,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=1000 and EventID<=2335)]]"
+    },
+    "width": {
+     "measured_events": 84,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 11,
+     "terms": 10,
+     "ms": 2883.7,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=1000 and EventID<=1002) or (EventID>=1005 and EventID<=1008) or (EventID>=1020 and EventID<=1022) or EventID=1025 or EventID=1041 or EventID=1060 or EventID=1072 or (EventID>=1101 and EventID<=1102) or EventID=2110 or (EventID>=2329 and EventID<=2335))]]"
+    },
+    "evtband": {
+     "measured_events": 84,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 6,
+     "terms": 5,
+     "ms": 3509.5,
+     "runs": 1,
+     "xpath": "*[System[((EventID>=1000 and EventID<=1002) or (EventID>=1005 and EventID<=1022) or (EventID>=1025 and EventID<=1060) or (EventID>=1072 and EventID<=1102) or (EventID>=2110 and EventID<=2335))]]"
+    },
+    "provider": {
+     "measured_events": 2096,
+     "measured_waste": 2012,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 52108.4,
+     "runs": 1,
+     "xpath": "*[System[Provider[@Name='Microsoft-Windows-WebAuthN']]]"
+    }
+   }
+  },
+  {
+   "instance": "Microsoft-Windows-WebAuthN/Operational|tail-24|idonly",
+   "channel": "Microsoft-Windows-WebAuthN/Operational",
+   "mode": "tail-24",
+   "qualified": false,
+   "n_targets": 24,
+   "n_providers": 1,
+   "target_events": 84,
+   "channel_total": 2096,
+   "policies": {
+    "span": {
+     "measured_events": 2096,
+     "measured_waste": 2012,
+     "predicted_waste": 2012,
+     "cost": 2,
+     "terms": 1,
+     "ms": 60551.0,
+     "runs": 1,
+     "xpath": "*[System[(EventID>=1000 and EventID<=2335)]]"
+    },
+    "width": {
+     "measured_events": 84,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 11,
+     "terms": 10,
+     "ms": 2129.1,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=1000 and EventID<=1002) or (EventID>=1005 and EventID<=1008) or (EventID>=1020 and EventID<=1022) or EventID=1025 or EventID=1041 or EventID=1060 or EventID=1072 or (EventID>=1101 and EventID<=1102) or EventID=2110 or (EventID>=2329 and EventID<=2335))]]"
+    },
+    "evtband": {
+     "measured_events": 84,
+     "measured_waste": 0,
+     "predicted_waste": 0,
+     "cost": 6,
+     "terms": 5,
+     "ms": 2169.6,
+     "runs": 3,
+     "xpath": "*[System[((EventID>=1000 and EventID<=1002) or (EventID>=1005 and EventID<=1022) or (EventID>=1025 and EventID<=1060) or (EventID>=1072 and EventID<=1102) or (EventID>=2110 and EventID<=2335))]]"
+    },
+    "provider": {
+     "measured_events": 2096,
+     "measured_waste": 2012,
+     "predicted_waste": null,
+     "cost": null,
+     "terms": null,
+     "ms": 70258.4,
+     "runs": 1,
+     "xpath": "*[System[Provider[@Name='Microsoft-Windows-WebAuthN']]]"
+    }
+   }
+  }
+ ],
+ "channels": {
+  "Application": {
+   "total": 25186,
+   "kinds": 119,
+   "providers": 49,
+   "postfilter_ms": 19326.3,
+   "postfilter_matched": 140,
+   "collect_ms": 1705
+  },
+  "Microsoft-Windows-AppXDeploymentServer/Operational": {
+   "total": 6525,
+   "kinds": 60,
+   "providers": 1,
+   "postfilter_ms": 6549.1,
+   "postfilter_matched": 374,
+   "collect_ms": 444
+  },
+  "Microsoft-Windows-WebAuthN/Operational": {
+   "total": 2096,
+   "kinds": 40,
+   "providers": 1,
+   "postfilter_ms": 54906.3,
+   "postfilter_matched": 2096,
+   "collect_ms": 155
+  },
+  "System": {
+   "total": 41165,
+   "kinds": 198,
+   "providers": 58,
+   "postfilter_ms": 60112.2,
+   "postfilter_matched": 188,
+   "collect_ms": 2487
+  }
+ },
+ "skipped": [
+  {
+   "instance": "System|rare-24|qualified",
+   "cheapest_cost": 27
+  },
+  {
+   "instance": "System|rare-40|qualified",
+   "cheapest_cost": 47
+  },
+  {
+   "instance": "System|tail-24|qualified",
+   "cheapest_cost": 37
+  },
+  {
+   "instance": "System|tail-40|qualified",
+   "cheapest_cost": 51
+  },
+  {
+   "instance": "Application|rare-24|qualified",
+   "cheapest_cost": 29
+  },
+  {
+   "instance": "Application|rare-40|qualified",
+   "cheapest_cost": 45
+  },
+  {
+   "instance": "Application|tail-24|qualified",
+   "cheapest_cost": 33
+  },
+  {
+   "instance": "Application|tail-40|qualified",
+   "cheapest_cost": 51
+  }
+ ]
+}
